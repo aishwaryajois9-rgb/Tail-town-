@@ -276,7 +276,7 @@ upiForm.addEventListener("submit", (e) => {
   }
   const subtotal = cart.reduce((s, i) => s + i.price * i.qty, 0);
   const total = subtotal + (subtotal > 0 ? 40 : 0); 
-  alert(`✅ Paid ₹${total} via UPI (${upiId}). Order placed! We'll be there in 15 mins!`);
+  alert(`Redirecting you to your UPI app. Please pay ₹${total} to complete your order.`);
   cart = [];
   updateCartCount();
   renderProducts(getActiveFilter(), searchInput.value); 
@@ -372,4 +372,5 @@ enterBtn.addEventListener("click", () => {
     // Ensure product page is visible after splash
     showProductsPage(); 
   }, 800);
+
 });
