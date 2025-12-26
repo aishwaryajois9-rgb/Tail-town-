@@ -573,7 +573,7 @@ footer {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #fdfdfd;
+  background: var(--primary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -735,6 +735,7 @@ button {
     padding: 14px 28px;
   }
 }
+
 
 
 
