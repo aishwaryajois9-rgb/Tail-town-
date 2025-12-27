@@ -62,7 +62,7 @@ nav button {
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-/* Styles for the new Contact button */
+/* Styles for the Contact button */
 #btn-contact {
   background: white;
   color:  var(--primary-color);
@@ -100,7 +100,7 @@ nav button.nav-link:not(.filter-btn):hover {
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* Search Bar - Hidden on Contact Page */
+/* Search Bar (Hidden on Contact Page) */
 #search-container {
     /* Existing search bar styles... */
     display: flex;
@@ -134,7 +134,7 @@ nav button.nav-link:not(.filter-btn):hover {
   margin: 0 auto;
 }
 
-/* ... (Product Card styles remain the same) ... */
+/* ... (Product Card styles) ... */
 .product-card {
   background: var(--card-bg);
   border-radius: 16px;
@@ -174,35 +174,28 @@ nav button.nav-link:not(.filter-btn):hover {
   font-weight: 700;
   color: var(--primary-color);
 }
-/* ... (End of Product Card styles) ... */
-
-/* Add to Cart + Quantity */
-/* ... (Existing styles remain the same up to .controls) ... */
 
 /* Add to Cart + Quantity */
 .controls {
   margin-top: 15px;
 }
-/* ... (Add-btn styles remain the same) ... */
 
-
-/* REDESIGNED QUANTITY CONTROLS */
+/* QUANTITY CONTROLS */
 .qty-controls {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px; /* Increased gap for separation */
+  gap: 15px; 
   margin-top: 5px;
-  /* Removed border and overflow for the new look */
   border: none; 
   border-radius: 0;
   width: fit-content;
   margin: 15px auto 0;
-  overflow: visible; /* Ensure nothing is clipped */
+  overflow: visible; 
 }
 
 .qty-controls button {
-  /* Make button circular and prominent */
+  /* button circular and prominent */
   background: #f0f0f0; /* Soft light background for the button circle */
   color: var(--primary-dark); /* Dark purple text for contrast */
   border: none;
@@ -213,7 +206,7 @@ nav button.nav-link:not(.filter-btn):hover {
   font-size: 20px; /* Slightly larger font size for + / - */
   font-weight: 600; 
   transition: background 0.2s, box-shadow 0.2s;
-  /* Add a soft inner shadow for the lifted effect */
+  /* soft inner shadow for the lifted effect */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
   display: flex;
   align-items: center;
@@ -226,25 +219,21 @@ nav button.nav-link:not(.filter-btn):hover {
 
 .qty-num {
     padding: 0 5px;
-    font-weight: 700; /* Made the number bold */
+    font-weight: 700; 
     font-size: 1.1rem;
     color: var(--text-color);
 }
-/* END OF REDESIGNED QUANTITY CONTROLS */
 
-
-/* Cart Modal - Quick fix for cart controls to be circular too */
 .cart-item .qty-controls button {
-    width: 28px; /* Slightly smaller size in cart modal */
+    width: 28px; 
     height: 28px;
     font-size: 16px;
     gap: 10px;
 }
-/* ... (Rest of styles.css remains the same) ... */
 
 .add-btn {
   background: var(--secondary-accent);
-  color: white; /* Changed text color to white for contrast */
+  color: white; 
   border: none;
   padding: 12px 25px;
   border-radius: 30px;
@@ -259,10 +248,9 @@ nav button.nav-link:not(.filter-btn):hover {
   color: white; /* White text on deep violet */
   transform: translateY(-1px);
 }
-/* ... (Quantity controls remain the same) ... */
 
 
-/* --- NEW: Contact Page Styles --- */
+/* --- Contact Page Styles --- */
 #contact-page {
     max-width: 1200px;
     margin: 40px auto;
@@ -320,7 +308,7 @@ nav button.nav-link:not(.filter-btn):hover {
 }
 
 .submit-btn {
-    background: #333; /* Dark background as requested in the image */
+    background: #333; /* Dark background  */
     color: white;
     border: none;
     padding: 15px 30px;
@@ -380,14 +368,14 @@ nav button.nav-link:not(.filter-btn):hover {
     background: var(--primary-light);
     color: var(--primary-dark);
     margin-right: 10px;
-    font-weight: normal; /* Keep social icon placeholder light */
+    font-weight: normal; 
 }
 .social-icons a:hover {
     background: var(--primary-dark);
     color: white;
 }
 
-/* --- Cart Modal Styles (unchanged functionality, retained for completeness) --- */
+/* --- Cart Modal Styles --- */
 .cart-modal {
   display: none;
   position: fixed;
@@ -635,10 +623,10 @@ body.splash-active footer {
         flex-wrap: wrap;
     }
     #search-container {
-        display: none !important; /* Hide search bar on small screens if needed */
+        display: none !important; 
     }
     .contact-container {
-        grid-template-columns: 1fr; /* Stack columns on small screens */
+        grid-template-columns: 1fr; 
         gap: 30px;
     }
     .contact-info-area {
@@ -723,18 +711,19 @@ button {
     display: block;
   }
 
-  /* Improve overall splash look on phone */
+  /*  overall splash look on phone */
   #splash-banner {
     background: linear-gradient(180deg, #6A1B9A, #4A148C);
   }
 
-  /* Improve enter button on mobile */
+  /*  enter button on mobile */
   #enter-site-btn {
     bottom: 60px;
     font-size: 1.1rem;
     padding: 14px 28px;
   }
 }
+
 
 
 
