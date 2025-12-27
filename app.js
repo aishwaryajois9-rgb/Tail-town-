@@ -75,10 +75,10 @@ const products = [
 
 let cart = [];
 const productListEl = document.getElementById("product-list");
-const contactPageEl = document.getElementById("contact-page"); // NEW
-const searchContainerEl = document.getElementById("search-container"); // NEW
-const btnHomeEl = document.getElementById("btn-home"); // NEW
-const btnContactEl = document.getElementById("btn-contact"); // NEW
+const contactPageEl = document.getElementById("contact-page"); 
+const searchContainerEl = document.getElementById("search-container"); 
+const btnHomeEl = document.getElementById("btn-home"); 
+const btnContactEl = document.getElementById("btn-contact"); 
 const cartCountEl = document.getElementById("cart-count");
 const cartModal = document.getElementById("cart-modal");
 const cartItemsEl = document.getElementById("cart-items");
@@ -176,7 +176,7 @@ function renderProducts(filterCat = "all", searchTerm = "") {
   });
 }
 
-// ===== CART FUNCTIONS (no change) =====
+// ===== CART FUNCTIONS  =====
 function changeQty(pid, delta) {
   const existing = cart.find(item => item.id === pid);
   if (existing) {
@@ -253,7 +253,7 @@ function updateCartTotalDisplay(subtotal) {
 }
 
 
-// ===== CHECKOUT (Forms - no change) =====
+// ===== CHECKOUT  =====
 btnUpi.addEventListener("click", () => {
   if (cart.length === 0) {
     alert("⚠️ Your cart is empty. Please add items to place an order.");
@@ -316,7 +316,7 @@ codForm.addEventListener("submit", (e) => {
   hideCart();
 });
 
-// ===== NEW: Contact Form Submission =====
+// ===== Contact Form Submission =====
 document.getElementById('contact-form').addEventListener('submit', (e) => {
     e.preventDefault();
     alert("Thank you for reaching out! We have received your message and will get back to you shortly.");
@@ -369,8 +369,9 @@ enterBtn.addEventListener("click", () => {
   setTimeout(() => {
     splash.style.display = "none";
     document.body.classList.remove("splash-active");
-    // Ensure product page is visible after splash
+    // To Ensure product page is visible after splash
     showProductsPage(); 
   }, 800);
 
 });
+
