@@ -553,38 +553,6 @@ footer {
   font-size: 14px;
   font-weight: 600;
 }
-
-/* Fullscreen Splash Banner */
-#splash-banner {
-  position: fixed;
-  inset: 0;
-  background: #6A1B9A;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  z-index: 9999;
-  background: linear-gradient(180deg, #6A1B9A, #4A148C);
-}
-.desktop-banner {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.mobile-banner {
-  width: 100%;
-  height: auto;
-  max-height: 100vh;
-  object-fit: contain;
-  display: none;
-}
-#enter-site-btn:hover {
-    background-color:  #4A148C;;
-    color: white;
-    transform: scale(1.05);
-}
-
 /* Hide the rest of the page until splash is closed */
 body.splash-active header,
 body.splash-active main,
@@ -742,6 +710,7 @@ button {
     display: block;
   }
 }
+
 
 
 
